@@ -1,0 +1,170 @@
+@import "colors";
+
+header{
+
+    .dark {
+        background-color: #000;
+    }
+    #hhhhhh-btn {
+        border-radius: 10px;
+        width: 80px;
+        height: 50px;
+        background-color: orange;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29.38px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    #hhhhhh-btn:hover {
+        background-color: gray;
+    }
+    #hhhhhh-btn:active {
+        transform: scale(0.5);
+    }
+    .dark * {
+        color: #fff;
+        background: #000;
+    }
+
+    .sidebar {
+        background: $main-color;
+        display: none;
+        position: relative;
+        z-index: 9999;
+
+        .sidebar-logo{
+            font-size: 32px;
+            padding-top: 10px;
+            color: #fff;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style:none;
+            margin-left: -350px;
+            p{
+                font-size: 32px;
+            }
+            button{
+                padding: 10px 120px;
+                border: 1px solid $btn-color;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: $btn-hover-color;
+                    color: $main-color;
+                }
+            }
+            li{
+    
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        input {
+            width: 40px;
+            aspect-ratio: 1;
+            display: none;
+            overflow: hidden;
+            margin:10px 20px 10px auto;
+            box-sizing: border-box;
+            
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            appearance:none;
+            cursor:pointer;
+
+            &::before,
+            &::after{
+                content:"";
+                grid-area:1/1;
+                transition:.3s;
+            }
+
+            &::before{
+                background:
+                  radial-gradient(closest-side at 12.5% 25%,#fff 96%,#0000) 0 0/80% 40%,
+                  linear-gradient(#fff 50%,#0000 0) top/80% 40% repeat-y;
+            }
+
+            &::after{
+                padding: 10%;
+                background: 
+                  radial-gradient(closest-side at 50% 12.5%,#fff 96%,#0000) top /20% 80% repeat-y,
+                  radial-gradient(closest-side at 12.5% 50%,#fff 96%,#0000) left/80% 20% repeat-x,
+                  conic-gradient(from 90deg at 33% 33%, #0000 90deg, #fff 0)
+                   100% 100%/60% 60% padding-box content-box;
+                transform: translate(-100%) translateZ(0) rotate(45deg);
+                opacity:0;
+            }
+            &:checked::before {
+                transform: translate(100%);
+                opacity:0;
+            }
+            &:checked::after {
+                transform: translate(0) translateZ(0) rotate(45deg);
+                opacity:1;
+            }
+        }
+    }
+
+    nav{
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 21px 207px;
+
+            p{
+                font-family: Fira Code;
+                font-size: 33px;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: -0.06em;
+                text-align: left;
+            }
+
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                li{
+                    
+                    a{
+                        color: $main-color;
+                        transition: all .5s;
+
+                        &:hover{
+                            color: $link-hover-color;
+                        }
+                    }
+                }
+            }
+
+            button{
+                padding: 12px 36px;
+                border: 1px solid $btn-color;
+                border-radius: 10px;
+            }
+        }
+    }
+}

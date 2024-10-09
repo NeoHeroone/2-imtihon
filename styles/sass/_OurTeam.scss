@@ -1,0 +1,76 @@
+@import "colors";
+
+main {
+
+    #OurTeam {
+        margin-bottom: 112px;
+
+        .team-cards{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            text-align: center;
+            gap: 30px;
+
+            .team-card{
+                width: 354px;
+                height: 476px;
+                padding-top: 40px;
+                background: #F5FAFF;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.1490196078);
+                transition: all 0.5s;
+
+                &:hover{
+                    transform: translateY(-15px);
+                    box-shadow: 0px 0px 30px -10px #00000026;
+                }
+                &:active{
+                    transform: translateY(0);
+                }
+                &:hover img {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+
+                img{
+                    transition: transform 0.3s ease;
+                }
+
+                h3{
+                    font-family: Inter;
+                    font-size: 25px;
+                    font-weight: 500;
+                    line-height: 34px;
+                    color: $main-color;
+                    margin-top: 16px;
+                }
+                span{
+                    font-family: Inter;
+                    font-size: 19px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    cursor: pointer;
+                }
+                p{
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: center;
+                    color: $team-desc-color;
+                    width: 322px;
+                    margin-top: 16px;
+                    margin-bottom: 24px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+                .icons{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "colors";
+
+.section-title{
+    color: $main-color;
+    font-family: Fira Code;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.section-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        border: none;
+
+        &:hover {
+            background-color: transparent;
+            color: $main-color;
+        }
+    }
+}

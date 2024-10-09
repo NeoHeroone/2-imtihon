@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "colors";
+@import "nav";
+@import "header";
+@import "statistika";
+@import "aboutUs";
+@import "kurslar";
+@import "darsliklar";
+@import "OurTeam";
+@import "sertificate";
+@import "footer";
+@import "responsive";
+@import "inheritance";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+
+    &:hover{
+        color: $link-hover-color;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &:visited{
+        color: $main-color;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+button{
+    color: $btn-color;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover{
+        color: $btn-hover-color;
+        background: $btn-color;
+    }
+    
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+span{
+    color: $btn-color;
+    font-family: Fira Code;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 207px;
+}

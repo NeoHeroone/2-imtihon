@@ -1,0 +1,105 @@
+@import "colors";
+
+main{
+
+    #aboutUs {
+
+        .container {
+
+            .aboutUs-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 142px;
+                padding-bottom: 88px;
+
+                .image-container {
+                    display: flex;
+                    gap: 30px;
+    
+                    .image-slice {
+                        width: 354px;
+                        height: 550px;
+                        border-radius: 30px;
+                        // overflow: hidden;
+                        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                        cursor: pointer;
+
+                        .bg-one{
+                            background: url(../../../img/about.png);
+                            background-size: cover;
+                            background-position-x: calc(30%);
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .bg-three{
+                            background: url(../../../img/about.png);
+                            background-size: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .image-slice-m{
+                        margin-top: 29px;
+                    }
+
+                    .image-slice {
+                        width: 354px;
+                        height: 550px;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        box-shadow: 10px 18px 10px rgba(0, 0, 0, 0.2);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        position: relative;
+
+                        &:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                        }
+
+                        &:active{
+                            transform: scale(1);
+                            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                        }
+
+                        .bg-one, .bg-three {
+                            transition: transform 0.3s ease;
+                        }
+
+                        &:hover .bg-one,
+                        &:hover .bg-three {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .aboutUs-description{
+
+                    h3{
+                        font-family: Inter;
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 34px;
+                        text-align: left;
+                        color: $main-color;
+                    }
+
+                    p{
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        text-align: left;
+                        color: $team-desc-color;
+                    }
+                    p:nth-child(2) {
+                        margin-top: 24px;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

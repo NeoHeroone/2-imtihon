@@ -1,0 +1,40 @@
+@import "colors";
+
+main {
+
+    #sertificate {
+
+        .container {
+            padding-bottom: 112px;
+
+            .sertificate-content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .sertificate-titles{
+
+                    h3{
+                        font-family: Inter;
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 34px;
+                        text-align: left;
+                        color: $main-color;
+                        margin-bottom: 16px;
+                    }
+
+                    p{
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        text-align: left;
+                        color: $team-desc-color;
+                        width: 482px;
+                    }
+                }
+            }
+        }
+    }
+}

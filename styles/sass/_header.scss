@@ -1,0 +1,80 @@
+@import "colors";
+
+header {
+
+    .header-content{
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 21px 207px;
+            
+            .image-container {
+                display: flex;
+                gap: 30px;
+
+                .image-slice {
+                    width: 226px;
+                    height: 605px;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s ease;
+                    position: relative;
+                }
+                .bg-one{
+                    background: url(../../../img/background.jpg);
+                    background-size: cover;
+                    background-position-x: calc(30%);
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .bg-three{
+                    background: url(../../../img/background.jpg);
+                    background-size: cover;
+                    background-position-x: right;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .image-slice-m{
+                margin-top: 50px;
+                .bg-two{
+                    background: url(../../../img/background.jpg);
+                    background-size: cover;
+                    background-position-x: calc(55%);
+                    scale: 1.4;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .header-description{
+
+                h1{
+                    font-family: Fira Code;
+                    font-size: 79px;
+                    font-weight: 500;
+                    line-height: 88px;
+                    letter-spacing: -0.08em;
+                    text-align: left;
+                }
+
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    margin-top: 48px;
+
+                    button{
+                        padding: 12px 91px;
+                        border: 1px solid $btn-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
